@@ -1,0 +1,236 @@
+<%- include("partials/head", { title: "Reservation | Food Fiesta" }) %>
+
+<link rel="stylesheet" href="/css/reservation.css">
+
+</head>
+
+<body>
+
+<%- include("partials/navbar") %>
+
+<!-- ==========================
+        HERO
+========================== -->
+
+<section class="reservation-hero">
+
+    <div class="overlay"></div>
+
+    <div class="container">
+
+        <div class="hero-content">
+
+            <span class="hero-subtitle">BOOK A TABLE</span>
+
+            <h1>Reserve Your Table</h1>
+
+            <p>
+                Enjoy an unforgettable dining experience by reserving your table in advance.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================
+        RESERVATION FORM
+========================== -->
+
+<section class="reservation-section">
+
+    <div class="container">
+
+        <div class="row g-5">
+
+            <!-- Form -->
+
+            <div class="col-lg-8">
+
+                <div class="reservation-card">
+
+                    <h2>Book Your Table</h2>
+
+                    <form id="reservationForm">
+
+                        <div class="row">
+
+                            <div class="col-md-6 mb-4">
+
+                                <label>Full Name</label>
+
+                                <input
+                                    type="text"
+                                    name="name"
+                                    class="form-control"
+                                    required>
+
+                            </div>
+
+                            <div class="col-md-6 mb-4">
+
+                                <label>Email</label>
+
+                                <input
+                                    type="email"
+                                    name="email"
+                                    class="form-control"
+                                    required>
+
+                            </div>
+
+                            <div class="col-md-6 mb-4">
+
+                                <label>Phone</label>
+
+                                <input
+                                    type="text"
+                                    name="phone"
+                                    class="form-control"
+                                    required>
+
+                            </div>
+
+                            <div class="col-md-6 mb-4">
+
+                                <label>Guests</label>
+
+                                <select
+                                    class="form-select"
+                                    name="guests">
+
+                                    <% for(let i=1;i<=10;i++){ %>
+
+                                        <option><%= i %></option>
+
+                                    <% } %>
+
+                                </select>
+
+                            </div>
+
+                            <div class="col-md-6 mb-4">
+
+                                <label>Date</label>
+
+                                <input
+                                    type="date"
+                                    name="date"
+                                    class="form-control"
+                                    required>
+
+                            </div>
+
+                            <div class="col-md-6 mb-4">
+
+                                <label>Time</label>
+
+                                <select
+                                    class="form-select"
+                                    name="time">
+
+                                    <option>12:00 PM</option>
+                                    <option>1:00 PM</option>
+                                    <option>2:00 PM</option>
+                                    <option>4:00 PM</option>
+                                    <option>6:00 PM</option>
+                                    <option>7:00 PM</option>
+                                    <option>8:00 PM</option>
+                                    <option>9:00 PM</option>
+
+                                </select>
+
+                            </div>
+
+                            <div class="col-12 mb-4">
+
+                                <label>Special Request</label>
+
+                                <textarea
+                                    class="form-control"
+                                    rows="5"
+                                    name="specialRequest"></textarea>
+
+                            </div>
+
+                            <div class="col-12">
+
+                                <button class="reserve-btn">
+
+                                    Reserve Table
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+            <!-- Restaurant Info -->
+
+            <div class="col-lg-4">
+
+                <div class="info-card">
+
+                    <h2>Visit Us</h2>
+
+                    <div class="info-item">
+
+                        📍 <strong>Address</strong>
+
+                        <p>123 Food Street, New Delhi, India</p>
+
+                    </div>
+
+                    <div class="info-item">
+
+                        📞 <strong>Phone</strong>
+
+                        <p>+91 9876543210</p>
+
+                    </div>
+
+                    <div class="info-item">
+
+                        ✉️ <strong>Email</strong>
+
+                        <p>foodfiesta@email.com</p>
+
+                    </div>
+
+                    <div class="info-item">
+
+                        🕒 <strong>Opening Hours</strong>
+
+                        <p>11:00 AM - 11:00 PM</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+<%- include("partials/footer") %>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script src="/js/reservation.js"></script>
+
+<%- include("partials/scripts") %>

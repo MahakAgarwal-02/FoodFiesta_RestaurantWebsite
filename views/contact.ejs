@@ -1,0 +1,213 @@
+<%- include("partials/head",{title:"Contact | Food Fiesta"}) %>
+
+<link rel="stylesheet" href="/css/contact.css">
+
+</head>
+
+<body>
+
+<%- include("partials/navbar") %>
+
+<!-- ================= HERO ================= -->
+
+<section class="contact-hero">
+
+    <div class="overlay"></div>
+
+    <div class="container">
+
+        <div class="hero-content">
+
+            <span class="hero-subtitle">CONTACT US</span>
+
+            <h1>Let's Talk With Us</h1>
+
+            <p>
+                We'd love to hear from you. Send us your questions,
+                feedback or reservation queries.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact-section">
+
+<div class="container">
+
+<div class="row g-5">
+
+<!-- LEFT -->
+
+<div class="col-lg-8">
+
+<div class="contact-card">
+
+<h2>Send Message</h2>
+
+<form id="contactForm">
+
+<div class="row">
+
+<div class="col-md-6 mb-4">
+
+<label>Name</label>
+
+<input
+type="text"
+name="name"
+class="form-control"
+required>
+
+</div>
+
+<div class="col-md-6 mb-4">
+
+<label>Email</label>
+
+<input
+type="email"
+name="email"
+class="form-control"
+required>
+
+</div>
+
+<div class="col-12 mb-4">
+
+<label>Subject</label>
+
+<input
+type="text"
+name="subject"
+class="form-control"
+required>
+
+</div>
+
+<div class="col-12 mb-4">
+
+<label>Message</label>
+
+<textarea
+name="message"
+rows="6"
+class="form-control"
+required></textarea>
+
+</div>
+
+<div class="col-12">
+
+<button class="send-btn">
+
+Send Message
+
+</button>
+
+</div>
+
+</div>
+
+</form>
+
+</div>
+
+</div>
+
+<!-- RIGHT -->
+
+<div class="col-lg-4">
+
+<div class="info-card">
+
+<h2>Contact Information</h2>
+
+<div class="info-item">
+
+📍
+
+<div>
+
+<h5>Address</h5>
+
+<p>123 Food Street, New Delhi, India</p>
+
+</div>
+
+</div>
+
+<div class="info-item">
+
+📞
+
+<div>
+
+<h5>Phone</h5>
+
+<p>+91 9876543210</p>
+
+</div>
+
+</div>
+
+<div class="info-item">
+
+✉️
+
+<div>
+
+<h5>Email</h5>
+
+<p>foodfiesta@email.com</p>
+
+</div>
+
+</div>
+
+<div class="info-item">
+
+🕒
+
+<div>
+
+<h5>Opening Hours</h5>
+
+<p>11:00 AM - 11:00 PM</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Google Map -->
+
+<section class="map-section">
+
+<iframe
+src="https://www.google.com/maps?q=New+Delhi&output=embed"
+loading="lazy">
+</iframe>
+
+</section>
+
+<%- include("partials/footer") %>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script src="/js/contact.js"></script>
+
+<%- include("partials/scripts") %>

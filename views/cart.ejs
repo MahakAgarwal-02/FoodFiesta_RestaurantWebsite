@@ -1,0 +1,101 @@
+<%- include("partials/head",{title:"Shopping Cart | Food Fiesta"}) %>
+
+<link rel="stylesheet" href="/css/cart.css">
+
+</head>
+
+<body>
+
+<%- include("partials/navbar") %>
+
+<section class="cart-section">
+
+<div class="container">
+
+<div class="cart-header">
+
+<h1>Shopping Cart</h1>
+
+<p>Enjoy your favourite dishes from Food Fiesta.</p>
+
+</div>
+
+<div class="row g-4">
+
+<div class="col-lg-8">
+
+<div id="cartContainer">
+
+</div>
+
+</div>
+
+<div class="col-lg-4">
+
+<div class="summary-card">
+
+<h3>Order Summary</h3>
+
+<div class="summary-line">
+
+<span>Subtotal</span>
+
+<span id="subtotal">₹0</span>
+
+</div>
+
+<div class="summary-line">
+
+<span>Tax (5%)</span>
+
+<span id="tax">₹0</span>
+
+</div>
+
+<div class="summary-line">
+
+<span>Delivery</span>
+
+<span class="free">FREE</span>
+
+</div>
+
+<hr>
+
+<div class="summary-total">
+
+<span>Total</span>
+
+<span id="grandTotal">₹0</span>
+
+</div>
+
+<button id="checkoutBtn" class="checkout-btn">
+
+Proceed To Checkout
+
+</button>
+
+<a href="/menu" class="continue-btn">
+
+Continue Shopping
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<%- include("partials/footer") %>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script src="/js/cart.js"></script>
+
+<%- include("partials/scripts") %>

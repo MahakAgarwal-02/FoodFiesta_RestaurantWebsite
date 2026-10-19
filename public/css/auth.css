@@ -1,0 +1,306 @@
+/* ==================================================
+                    AUTH PAGE
+================================================== */
+
+.auth-section{
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:130px 0 80px;
+
+    background:
+    linear-gradient(rgba(255,255,255,.90),rgba(255,255,255,.90)),
+    url("/images/about/about-hero.jpg") center center/cover no-repeat;
+
+}
+
+/* ==================================================
+                AUTH HEADER
+================================================== */
+
+.auth-header{
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+}
+
+.auth-logo{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:15px;
+
+    text-decoration:none;
+
+    margin-bottom:22px;
+
+}
+
+.auth-logo img{
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:18px;
+
+    box-shadow:0 10px 25px rgba(255,107,53,.30);
+
+}
+
+.auth-logo .food{
+
+    font-size:42px;
+
+    font-weight:800;
+
+    color:#222;
+
+}
+
+.auth-logo .fiesta{
+
+    font-size:42px;
+
+    font-weight:800;
+
+    color:#ff6b35;
+
+}
+
+.auth-header h1{
+
+    font-size:48px;
+
+    font-weight:700;
+
+    color:#222;
+
+    margin-bottom:10px;
+
+}
+
+.auth-header p{
+
+    color:#777;
+
+    font-size:18px;
+
+    margin:0;
+
+}
+
+/* ==================================================
+                AUTH CARD
+================================================== */
+
+.auth-card{
+
+    width:100%;
+
+    max-width:550px;
+
+    margin:auto;
+
+    background:#fff;
+
+    border-radius:22px;
+
+    padding:40px;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.10);
+
+}
+
+.auth-card label{
+
+    display:block;
+
+    font-weight:600;
+
+    color:#222;
+
+    margin-bottom:8px;
+
+}
+
+/* ==================================================
+                INPUTS
+================================================== */
+
+.form-control{
+
+    height:54px;
+
+    border-radius:12px;
+
+    padding:0 18px;
+
+    border:1px solid #ddd;
+
+    box-shadow:none;
+
+    transition:.3s;
+
+}
+
+.form-control:focus{
+
+    border-color:#ff6b35;
+
+    box-shadow:0 0 0 .2rem rgba(255,107,53,.15);
+
+}
+
+/* ==================================================
+                BUTTON
+================================================== */
+
+.auth-btn{
+
+    width:100%;
+
+    height:56px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#ff6b35;
+
+    color:#fff;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+.auth-btn:hover{
+
+    background:#111;
+
+    transform:translateY(-2px);
+
+}
+
+/* ==================================================
+                LINKS
+================================================== */
+
+.auth-link{
+
+    text-align:center;
+
+    margin-top:22px;
+
+    color:#666;
+
+}
+
+.auth-link a{
+
+    color:#ff6b35;
+
+    font-weight:700;
+
+    text-decoration:none;
+
+}
+
+.auth-link a:hover{
+
+    color:#111;
+
+}
+
+/* ==================================================
+                RESPONSIVE
+================================================== */
+
+@media(max-width:992px){
+
+.auth-card{
+
+max-width:500px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.auth-section{
+
+padding:120px 20px 70px;
+
+}
+
+.auth-logo{
+
+gap:10px;
+
+}
+
+.auth-logo img{
+
+width:58px;
+
+height:58px;
+
+}
+
+.auth-logo .food,
+.auth-logo .fiesta{
+
+font-size:32px;
+
+}
+
+.auth-header h1{
+
+font-size:36px;
+
+}
+
+.auth-header p{
+
+font-size:16px;
+
+}
+
+.auth-card{
+
+padding:30px 22px;
+
+}
+
+.form-control{
+
+height:50px;
+
+}
+
+.auth-btn{
+
+height:52px;
+
+font-size:16px;
+
+}
+
+}

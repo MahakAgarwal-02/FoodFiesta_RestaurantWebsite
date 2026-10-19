@@ -1,0 +1,283 @@
+/* ==================================================
+                RESERVATION HERO
+================================================== */
+
+.reservation-hero{
+    position:relative;
+    height:55vh;
+    background:url("/images/hero/reservation.avif") center center/cover no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.reservation-hero .overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.65);
+}
+
+.reservation-hero .container{
+    position:relative;
+    z-index:2;
+}
+
+.hero-content{
+    text-align:center;
+    color:#fff;
+}
+
+.hero-subtitle{
+    display:inline-block;
+    padding:8px 20px;
+    border-radius:30px;
+    background:rgba(255,107,53,.18);
+    border:1px solid #ff6b35;
+    color:#ffb18d;
+    font-size:13px;
+    letter-spacing:2px;
+    margin-bottom:20px;
+}
+
+.hero-content h1{
+    font-size:56px;
+    margin-bottom:18px;
+}
+
+.hero-content p{
+    max-width:650px;
+    margin:auto;
+    font-size:17px;
+    line-height:1.8;
+}
+
+
+/* ==================================================
+            RESERVATION SECTION
+================================================== */
+
+.reservation-section{
+    padding:80px 0;
+    background:#fafafa;
+}
+
+.reservation-card{
+
+    background:#fff;
+
+    padding:30px;
+
+    border-radius:18px;
+
+    box-shadow:0 12px 28px rgba(0,0,0,.08);
+
+    max-width:650px;
+
+    margin:auto;
+
+}
+
+.reservation-card h2{
+
+    margin-bottom:22px;
+
+    font-size:28px;
+
+    color:#222;
+
+}
+
+.reservation-card label{
+
+    font-weight:600;
+
+    margin-bottom:8px;
+
+    color:#444;
+
+}
+
+.form-control,
+.form-select{
+
+    border-radius:10px;
+
+    padding:10px 14px;
+
+    border:1px solid #ddd;
+
+    box-shadow:none;
+
+    font-size: 14px;
+
+}
+
+.form-control:focus,
+.form-select:focus{
+
+    border-color:#ff6b35;
+
+    box-shadow:0 0 0 .2rem rgba(255,107,53,.15);
+
+}
+
+textarea{
+
+   height: 110px;
+
+}
+
+.reserve-btn{
+
+    width:100%;
+
+    border:none;
+
+    background:#ff6b35;
+
+    color:#fff;
+
+    padding:12px;
+
+    border-radius:12px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.reserve-btn:hover{
+
+    background:#111;
+
+}
+
+
+/* ==================================================
+                INFO CARD
+================================================== */
+
+.info-card{
+
+    background:#fff;
+
+    padding:30px;
+
+    border-radius:18px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+    height:100%;
+
+    max-width: 420px;
+
+    margin: auto;
+
+}
+
+.info-card h2{
+
+    margin-bottom:35px;
+
+    color:#222;
+
+}
+
+.info-item{
+
+    margin-bottom:28px;
+
+    padding-bottom:20px;
+
+    border-bottom:1px solid #eee;
+
+}
+
+.info-item:last-child{
+
+    border:none;
+
+    margin-bottom:0;
+
+    padding-bottom:0;
+
+}
+
+.info-item strong{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    color:#222;
+
+}
+
+.info-item p{
+
+    margin:0;
+
+    color:#666;
+
+    line-height:1.7;
+
+}
+
+
+/* ==================================================
+                RESPONSIVE
+================================================== */
+
+@media(max-width:992px){
+
+.hero-content h1{
+
+font-size:44px;
+
+}
+
+.reservation-card{
+
+margin-bottom:30px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.reservation-hero{
+
+height:42vh;
+
+}
+
+.hero-content h1{
+
+font-size:34px;
+
+}
+
+.hero-content p{
+
+font-size:15px;
+
+}
+
+.reservation-section{
+
+padding:70px 0;
+
+}
+
+.reservation-card,
+.info-card{
+
+padding:28px;
+
+}
+
+}

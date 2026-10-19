@@ -1,0 +1,300 @@
+/* ==================================================
+                    CONTACT HERO
+================================================== */
+
+.contact-hero{
+    position:relative;
+    height:55vh;
+    background:url("/images/about/about-hero.jpg") center center/cover no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.contact-hero .overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.65);
+}
+
+.contact-hero .container{
+    position:relative;
+    z-index:2;
+}
+
+.hero-content{
+    text-align:center;
+    color:#fff;
+}
+
+.hero-subtitle{
+    display:inline-block;
+    padding:8px 20px;
+    background:rgba(255,107,53,.15);
+    border:1px solid #ff6b35;
+    border-radius:30px;
+    color:#ffb18d;
+    letter-spacing:2px;
+    font-size:13px;
+    margin-bottom:20px;
+}
+
+.hero-content h1{
+    font-size:56px;
+    margin-bottom:18px;
+}
+
+.hero-content p{
+    max-width:650px;
+    margin:auto;
+    font-size:17px;
+    line-height:1.8;
+}
+
+
+/* ==================================================
+                CONTACT SECTION
+================================================== */
+
+.contact-section{
+    padding:90px 0;
+    background:#fafafa;
+}
+
+.contact-card{
+
+    background:#fff;
+
+    padding:28px;
+
+    border-radius:18px;
+
+    box-shadow:0 12px 28px rgba(0,0,0,.08);
+
+    max-width:620px;
+
+    margin:auto;
+
+}
+
+.contact-card h2{
+
+    margin-bottom:30px;
+
+    color:#222;
+
+}
+
+.contact-card label{
+
+    font-weight:600;
+
+    margin-bottom:8px;
+
+    color:#444;
+
+}
+
+textarea.form-control{
+
+    padding:10px 14px;
+
+    border-radius:10px;
+
+    box-shadow:none;
+
+    font-size: 14px;
+
+    height: 120px;
+
+}
+
+.form-control:focus{
+
+    border-color:#ff6b35;
+
+    box-shadow:0 0 0 .2rem rgba(255,107,53,.15);
+
+}
+
+textarea{
+
+    resize:none;
+
+}
+
+.send-btn{
+
+    width:100%;
+
+    background:#ff6b35;
+
+    color:#fff;
+
+    border:none;
+
+    padding:12px;
+
+    border-radius:10px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.send-btn:hover{
+
+    background:#111;
+
+}
+
+
+/* ==================================================
+                    INFO CARD
+================================================== */
+
+.info-card{
+
+    background:#fff;
+
+    padding:28px;
+
+    border-radius:18px;
+
+    box-shadow:0 12px 28px rgba(0,0,0,.08);
+
+    max-width:420px;
+
+    margin:auto;
+
+}
+
+.info-card h2{
+
+    margin-bottom:22px;
+
+    font-size:28px;
+
+}
+
+.info-item{
+
+    display:flex;
+
+    gap:15px;
+
+    margin-bottom:22px;
+
+    align-items:flex-start;
+
+}
+
+.info-item:last-child{
+
+    margin-bottom:0;
+
+}
+
+.info-item h5{
+
+    margin-bottom:5px;
+
+    color:#222;
+
+}
+
+.info-item p{
+
+    margin:0;
+
+    color:#666;
+
+    line-height:1.6;
+
+}
+
+
+/* ==================================================
+                    MAP
+================================================== */
+
+.map-section{
+
+    width:100%;
+
+}
+
+.map-section iframe{
+
+    width:100%;
+
+    height:420px;
+
+    border:0;
+
+}
+
+
+/* ==================================================
+                RESPONSIVE
+================================================== */
+
+@media(max-width:992px){
+
+.hero-content h1{
+
+font-size:42px;
+
+}
+
+.contact-card{
+
+margin-bottom:30px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.contact-hero{
+
+height:42vh;
+
+}
+
+.hero-content h1{
+
+font-size:34px;
+
+}
+
+.hero-content p{
+
+font-size:15px;
+
+}
+
+.contact-section{
+
+padding:70px 0;
+
+}
+
+.contact-card,
+.info-card{
+
+padding:25px;
+
+}
+
+.map-section iframe{
+
+height:320px;
+
+}
+
+}
